@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.example.glnr.amin.imgprocwithopencv">
+    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="26"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <application android:theme="@style/AppTheme" android:label="ImgProc with OpenCV" android:icon="@mipmap/ic_launcher" android:textColor="@android:color/holo_blue_bright" android:allowBackup="true" android:supportsRtl="true" android:roundIcon="@mipmap/ic_launcher_round">
+        <activity android:name="com.example.glnr.amin.imgprocwithopencv.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.glnr.amin.imgprocwithopencv.FaceActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.example.glnr.amin.imgprocwithopencv.CannyActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.example.glnr.amin.imgprocwithopencv.GrayActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.example.glnr.amin.imgprocwithopencv.HsvActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.example.glnr.amin.imgprocwithopencv.GaussianBlurActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.example.glnr.amin.imgprocwithopencv.BlurActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.example.glnr.amin.imgprocwithopencv.BinaryActivity" android:screenOrientation="landscape"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+    </application>
+</manifest>
